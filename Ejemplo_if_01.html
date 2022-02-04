@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolaMundo</title>
+</head>
+<body>
+    <h1 id="título">Ejemplo If Ternario</h1>
+
+    <button onclick="ejemploifTernario()">Púlsame</button>
+    <script>
+        function ejemploifTernario(){
+            var objetoFecha = new Date;
+            var hoy = objetoFecha.getDay();
+
+            document.getElementById('título').innerHTML =
+            (hoy == 5) ? "HOY ES VIERNES" : "HOY NO ES VIERNES";
+
+            if (hoy == 0 || hoy == 6){
+                console.log("ES FIN DE SEMANA!");
+            }
+            else{
+                console.log("HOY ES LABORABLE");
+            }
+
+        }
+
+    </script>
+</body>
+</html>
